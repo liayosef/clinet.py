@@ -3,22 +3,40 @@ import datetime
 import random
 import logging
 
+"""
+Author:lia yosef
+program name:2.6
+Description:client and server communication  
+date : 17/11/2023
+"""
 logging.basicConfig(filename="client.log", level="DEBUG")
 
 QUEUE_LEN = 1
-MAX_PACKET = 1024
+MAX_PACKET = 4
 
 
 def time():
+    """
+    this function returns a string of the time with the help of datetime
+    :return:the time now
+    """
     return str(datetime.datetime.now())
 
 
 def name():
+    """
+     this function returns the name of the server
+    :return:a string parameter
+    """
     shem = "server_hero"
     return shem
 
 
 def rand_number():
+    """
+    this function returns a random number from 1 to 10 with the help od randint
+    :return:an integer between 1-10
+    """
     number = random.randint(1, 10)
     return number
 
